@@ -1,0 +1,14 @@
+.award{
+	width: 350px;
+	height: 500px;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-right: 50px;
+	background: #ffffff;
+	background-position: center !important;
+	background-size: cover !important;
+}
+.award strong{
+	color: black;
+}

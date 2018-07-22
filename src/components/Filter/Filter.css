@@ -1,0 +1,32 @@
+.filter{
+	border-right: 1px solid #f7f7f7;
+	position: absolute;
+	top: 0; bottom: 0;
+	width: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.filter nav{
+	display: flex;
+	flex-direction: row-reverse;
+	transform: rotate(-90deg);
+}
+.filter nav a{
+	padding: 35px 0;
+	margin: 0 30px;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #575757;
+	transition: all .3s ease;
+	border-bottom: 3px solid transparent;
+}
+.filter nav a:hover{
+	color: #000000;
+	border-bottom: 3px solid #000000;
+}
+.filter nav a.active{
+	border-bottom: 3px solid #575757;
+}

@@ -1,0 +1,14 @@
+.content{
+	height: 100%;
+	position: relative;
+	padding-left: 850px;
+	background: #252839;
+	color: #ffffff;
+	overflow-y: hidden;
+}
+.award-list{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
