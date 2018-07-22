@@ -8,7 +8,106 @@
 	background: #ffffff;
 	background-position: center !important;
 	background-size: cover !important;
+	position: relative;
 }
-.award strong{
-	color: black;
+.award-filter{
+	position: absolute;
+	top: 0; right: 0;
+	bottom: 0; left: 0;
+	background: linear-gradient(to top right, #252839, transparent);
+	z-index: 0;
+	transition: all .2s ease;
+}
+.award-filter:after{
+	content: '';
+	position: absolute;
+	top: 0; right: 0;
+	bottom: 0; left: 0;
+	background-image: linear-gradient(to top right, #31c6de, transparent);
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+.award:hover .award-filter:after{
+	opacity: 1;
+}
+span.score{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(0);
+	opacity: 0;
+	transition: all .4s ease;
+	font-size: 50px;
+}
+.award:hover span.score{
+	opacity: 1;
+	transform: translateY(-100%);
+}
+.award .top{
+	position: relative;
+	z-index: 10;
+	padding: 25px;
+}
+.award .top strong{
+	font-weight: 300;
+	font-size: 30px;
+	display: block;
+	letter-spacing: .4px;
+	margin-bottom: 10px;
+}
+.award .top small{
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.award .bottom{
+	position: absolute;
+	right: 0;
+	bottom: 0; left: 0;
+	padding: 25px;
+}
+.award .bottom h4{
+	font-size: 30px;
+	letter-spacing: 2px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.award .bottom h4:after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0; left: 0;
+	height: 4px;
+	width: 60px;
+	background: #ffffff;
+}
+.award .author{
+	display: flex;
+}
+.award .author-img{
+	width: 50px; height: 50px;
+	background-size: cover !important;
+	background-position: center !important;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 20px;
+}
+.award .author .text{
+	flex: 1;
+}
+.award .author .text strong{
+	display: block;
+	font-size: 18px;
+	letter-spacing: .6px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.award .author .text small{
+	font-size: 14px;
+	opacity: .5;
+	font-weight: 300;
+	letter-spacing: .4px;
 }

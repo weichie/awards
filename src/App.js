@@ -13,20 +13,18 @@ class App extends Component {
 	}
 
 	componentDidMount(){
-		fetch('https://cors-anywhere.herokuapp.com/https://www.weichieprojects.com/wp-json/awards/all-posts')
-			.then((response) => {
+		const cors = 'https://cors-anywhere.herokuapp.com/';
+		const url = 'https://www.weichieprojects.com/wp-json/awards/all-posts';
+		fetch(`${cors}${url}`)
+			.then(response => {
 				if(response.ok){
 					return response.json();
 				}
 				throw new Error('Request failed!');
 			}, networkError => {
 				console.log(networkError.message);
-			})
-			.then((jsonResponse)=>{
-				console.log(jsonResponse)
-				this.setState({
-					awards: jsonResponse,
-				})
+			}).then(jsonResponse => {
+				this.setState({awards: jsonResponse,});
 			});
 	}
 
