@@ -19,11 +19,9 @@ class AwardList extends React.Component{
 		const awardIds = Object.keys(this.props.awards);
 
 		return (
-			<div className="content">
-				<ul className="award-list">
-					{awardIds.map(this.renderAwards)}
-				</ul>
-			</div>
+			<ul className="award-list">
+				{awardIds.map(this.renderAwards)}
+			</ul>
 		);
 	}
 }

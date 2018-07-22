@@ -1,6 +1,6 @@
 .sidebar{
-	position: absolute;
-	top: 0; bottom: 0;
+	position: relative;
+	height: 100%;
 	width: 500px;
 	z-index: 20;
 	background: #ffffff;
@@ -54,4 +54,42 @@
 }
 .sidebar p a{
 	color: #31c6de;
+}
+
+@media only screen and (max-width: 1400px){
+	.sidebar  			{width: 400px;}
+	.sidebar-text 		{transform: translate(-14%,-50%);}
+	.sidebar p{
+		width: 315px;
+		transform: translateX(-35px);
+	}
+}
+
+@media only screen and (max-width: 980px){
+	.sidebar{
+		width: 100%;
+		height: auto;
+	}
+	.sidebar-text{
+		position: static;
+		width: 100%;
+		padding: 50px;
+		transform: translate(0,0);
+	}
+	.sidebar .logo 	{padding-left: 0;}
+	.sidebar h1 span 	{color: #252839;}
+	.sidebar p{
+		width: 80%;
+		transform: translateX(0);
+	}
+}
+@media only screen and (max-width: 780px){
+	.sidebar-text 		{padding: 50px 25px;}
+	.sidebar p 			{width: 100%;}
+}
+@media only screen and (max-width: 600px){
+	.sidebar h1{
+		font-size: 40px;
+		line-height: 60px;
+	}
 }

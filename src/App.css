@@ -1,4 +1,23 @@
+*{
+	box-sizing: border-box;
+}
 .App{
-  position: relative;
-  height: 100vh;
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	background: #252839;
+}
+.content{
+	height: 100%;
+	position: relative;
+	padding-left: 300px;
+	color: #ffffff;
+	flex: 1;
+}
+
+@media only screen and (max-width: 980px){
+	.App 			{flex-direction: column;}
+	.content 	{padding-left: 0;}
 }

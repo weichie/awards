@@ -30,3 +30,11 @@
 .filter nav a.active{
 	border-bottom: 3px solid #575757;
 }
+
+@media only screen and (max-width: 1400px){
+	.filter 			{width: 50px;}
+	.filter nav a 	{padding: 15px 0;}
+}
+@media only screen and (max-width: 980px){
+	.filter 			{display: none;}
+}

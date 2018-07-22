@@ -1,14 +1,25 @@
-.content{
-	height: 100%;
-	position: relative;
-	padding-left: 850px;
-	background: #252839;
-	color: #ffffff;
-	overflow-y: hidden;
-}
 .award-list{
 	display: flex;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	flex-wrap: nowrap;
+}
+@media only screen and (max-width: 980px){
+	.award-list{
+		padding: 50px;
+		position: static;
+		transform: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width: 780px){
+	.award-list{
+		padding: 50px 25px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column;
+	}
 }

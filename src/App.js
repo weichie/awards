@@ -24,7 +24,7 @@ class App extends Component {
 			}, networkError => {
 				console.log(networkError.message);
 			}).then(jsonResponse => {
-				this.setState({awards: jsonResponse,});
+				this.setState({awards: jsonResponse});
 			});
 	}
 
@@ -32,7 +32,9 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Sidebar />
-				<AwardList awards={this.state.awards} />
+				<div className="content">
+					<AwardList awards={this.state.awards} />
+				</div>
 			</div>
 		);
 	}
