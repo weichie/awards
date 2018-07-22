@@ -1,7 +1,8 @@
 {
   "name": "awards",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://awards.weichieprojects.com/",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
