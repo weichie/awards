@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 import Filter from '../Filter/Filter';
@@ -17,6 +18,9 @@ class Sidebar extends React.Component{
 						I made this small project to showcase my award-nominated projects and to learn myself React. 
 						It's using the Wordpress API from my main website <a href="https://weichieprojects.com" target="_blank" rel="noopener noreferrer">weichieprojects.com</a> to pull the data.
 					</p>
+				</div>
+				<div className="footer">
+					<Link to="/about">About</Link>
 				</div>
 			</div>
 		);

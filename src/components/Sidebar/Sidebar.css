@@ -56,6 +56,27 @@
 	color: #31c6de;
 }
 
+.sidebar .footer{
+	position: absolute;
+	z-index: 25;
+	bottom: 0; left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0;
+}
+
+.sidebar .footer a{
+	display: inline-block;
+	padding: 15px 10px;
+	opacity: .6;
+	color: #000000;
+	font-size: 14px;
+	transition: opacity .3s ease;
+}
+.sidebar .footer a:hover{
+	opacity: 1;
+}
+
 @media only screen and (max-width: 1400px){
 	.sidebar  			{width: 400px;}
 	.sidebar-text 		{transform: translate(-14%,-50%);}
@@ -82,6 +103,7 @@
 		width: 80%;
 		transform: translateX(0);
 	}
+	.sidebar .footer 	{display: none;}
 }
 @media only screen and (max-width: 780px){
 	.sidebar-text 		{padding: 50px 25px;}

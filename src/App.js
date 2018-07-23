@@ -3,6 +3,7 @@ import './App.css';
 
 import Sidebar from './components/Sidebar/Sidebar';
 import AwardList from './components/AwardList/AwardList';
+import About from './components/About/About';
 
 class App extends Component {
 	constructor(props){
@@ -27,15 +28,15 @@ class App extends Component {
 			});
 	}
 
-	render() {
-		return (
+	render(){
+		return(
 			<div className="App">
 				<Sidebar />
 				<div className="content">
 					<AwardList awards={this.state.awards} />
 				</div>
 			</div>
-		);
+		)
 	}
 }
 
