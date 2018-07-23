@@ -14,7 +14,8 @@ class Sidebar extends React.Component{
 				<div className="sidebar-text">
 					<h1>See my <span>Award</span> Nomina<span>tions</span></h1>
 					<p>
-						I made this small project to showcase my award-nominated projects. This page is build in React and uses the Wordpress API from my main website on <a href="https://weichieprojects.com">weichieprojects</a>.
+						I made this small project to showcase my award-nominated projects and to learn myself React. 
+						It's using the Wordpress API from my main website <a href="https://weichieprojects.com" target="_blank" rel="noopener noreferrer">weichieprojects.com</a> to pull the data.
 					</p>
 				</div>
 			</div>
