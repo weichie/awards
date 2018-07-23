@@ -30,6 +30,12 @@
 .award:hover .award-filter:after{
 	opacity: 1;
 }
+a.project-link{
+	display: block;
+	position: relative;
+	height: 100%;
+	color: #ffffff;
+}
 span.score{
 	position: absolute;
 	width: 100%;
