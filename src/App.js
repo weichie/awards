@@ -3,7 +3,6 @@ import './App.css';
 
 import Sidebar from './components/Sidebar/Sidebar';
 import AwardList from './components/AwardList/AwardList';
-import About from './components/About/About';
 
 class App extends Component {
 	constructor(props){
@@ -26,6 +25,12 @@ class App extends Component {
 			}).then(jsonResponse => {
 				this.setState({awards: jsonResponse});
 			});
+
+		console.log('ready');
+	}
+
+	componentWillMound(){
+		console.log('lel');
 	}
 
 	render(){

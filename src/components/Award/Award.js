@@ -2,6 +2,10 @@ import React from 'react';
 import './Award.css';
 
 class Award extends React.Component{
+	componentDidMount() {
+		console.log('add active class');		
+	}
+
 	render(){
 		const a = this.props.award;
 		let type = (a.award_type === 'client: Client Work') ? 'Subcontract' : 'Self Made';
