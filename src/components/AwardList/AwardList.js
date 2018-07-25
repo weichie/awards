@@ -4,7 +4,6 @@ import './AwardList.css';
 import Award from '../Award/Award';
 
 class AwardList extends React.Component{
-
 	renderAwards = key => {
 		const award = this.props.awards[key];
 

@@ -2,8 +2,14 @@
 	display: flex;
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-35%);
 	flex-wrap: nowrap;
+	opacity: 0;
+	transition: all .5s ease;
+}
+.award-list.active{
+	opacity: 1;
+	transform: translateY(-50%);
 }
 @media only screen and (max-width: 980px){
 	.award-list{

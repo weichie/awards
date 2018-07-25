@@ -3,7 +3,10 @@ import './Award.css';
 
 class Award extends React.Component{
 	componentDidMount() {
-		console.log('add active class');		
+		const awardObject = document.querySelector('.award-list');
+		setTimeout(function(){
+			awardObject.classList.add('active');
+		}, 300);
 	}
 
 	render(){
