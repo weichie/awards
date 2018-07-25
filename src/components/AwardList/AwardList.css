@@ -18,6 +18,12 @@
 		transform: none;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		opacity: 0;
+		transform: translateY(10%);
+	}
+	.award-list.active{
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 @media only screen and (max-width: 780px){
