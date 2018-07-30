@@ -6,6 +6,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .5s ease;
+}
+.filter.loading{
+	opacity: 0;
+	transform: translateX(-100px);
 }
 .filter nav{
 	display: flex;

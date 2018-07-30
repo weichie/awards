@@ -4,6 +4,10 @@
 	width: 500px;
 	z-index: 20;
 	background: #ffffff;
+	transition: width .7s .3s ease;
+}
+.sidebar.loading{
+	width: 0;
 }
 .sidebar-text{
 	position: absolute;
@@ -15,6 +19,13 @@
 	text-align: center;
 	padding-top: 35px;
 	padding-left: 80px;
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s ease;
+}
+.sidebar .logo.loading{
+	opacity: 0;
+	transform: translateY(-100px);
 }
 .sidebar .logo img{
 	width: 100px;
@@ -28,6 +39,13 @@
 	padding-bottom: 35px;
 	margin-bottom: 45px;
 	position: relative;
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .5s ease;
+}
+.sidebar h1.loading{
+	opacity: 0;
+	transform: translateX(100px);
 }
 .sidebar h1:after{
 	content: '';
@@ -50,7 +68,13 @@
 	letter-spacing: .4px;
 	font-size: 20px;
 	line-height: 28px;
-	transform: translateX(-100px);
+	transform: translate(-100px, 0);
+	opacity: 1;
+	transition: all .5s ease;
+}
+.sidebar p.loading{
+	opacity: 0;
+	transform: translate(-100px, 40%);
 }
 .sidebar p a{
 	color: #31c6de;
@@ -63,8 +87,14 @@
 	right: 0;
 	text-align: center;
 	padding: 0;
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s ease;
 }
-
+.sidebar .footer.loading{
+	opacity: 0;
+	transform: translateY(100px);
+}
 .sidebar .footer a{
 	display: inline-block;
 	padding: 25px 10px;

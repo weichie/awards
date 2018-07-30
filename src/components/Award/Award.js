@@ -6,7 +6,7 @@ class Award extends React.Component{
 		const awardObject = document.querySelector('.award-list');
 		setTimeout(function(){
 			awardObject.classList.add('active');
-		}, 300);
+		}, 500);
 	}
 
 	render(){
