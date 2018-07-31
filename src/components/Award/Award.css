@@ -118,6 +118,14 @@ span.score{
 	letter-spacing: .4px;
 }
 
+.award.active{
+	border: 1px solid red;
+	position: fixed;
+	z-index: 99999;
+	top: 0; bottom: 0;
+	left: 0;
+}
+
 @media only screen and (max-width: 980px){
 	.award{
 		margin: 0;

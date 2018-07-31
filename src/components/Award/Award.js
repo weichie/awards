@@ -2,11 +2,25 @@ import React from 'react';
 import './Award.css';
 
 class Award extends React.Component{
+	constructor(props){
+		super(props);
+		this.handleOnClick = this.handleOnClick.bind(this);
+
+		this.state = {
+			active: false
+		}
+	}
+
 	componentDidMount() {
 		const awardObject = document.querySelector('.award-list');
-		setTimeout(function(){
-			awardObject.classList.add('active');
-		}, 500);
+		awardObject.classList.add('active');
+
+		//REMOVE LOADING ANIMATION
+	}
+
+	handleOnClick = e => {
+		e.preventDefault();
+		this.setState({active: true});
 	}
 
 	render(){
@@ -15,7 +29,7 @@ class Award extends React.Component{
 		let rel = (a.allow_follow === '1') ? 'noopener noreferrer' : 'noopener noreferrer noindex nofollow';
 
 		return(
-			<li className="award" style={{background: `url(${a.featured_img_src})`}}>
+			<li className={this.state.active ? 'award active' : 'award'} style={{background: `url(${a.featured_img_src})`}} onClick={this.handleOnClick}>
 				<a className="project-link" href={a.award_url} target="_blank" rel={rel}>
 					<div className="award-filter"></div>
 					<div className="top">
